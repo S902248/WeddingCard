@@ -3,11 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Card</title>
+    <title>Wedding Invitation | Aarohi & Rahul</title>
+    
+    <!-- Premium Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Initial Loading Screen -->
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Music Control -->
+    <div class="music-control" id="musicToggle" title="Play/Pause Background Music">
+        <span class="icon">🎵</span>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="music/wedding_theme.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Parallax Background Image provided by USER -->
+        <div class="hero-background"></div>
+        <div class="overlay"></div>
+        
+        <div class="hero-content fade-in-up">
+            <h3 class="ganesh">|| श्री गणेशाय नमः ||</h3>
+            <h4 class="sub-title">You are cordially invited to the wedding of</h4>
+            <h1 class="names">Aarohi <span>&</span> Rahul</h1>
+            <p class="date">25th November 2026</p>
+            <div class="scroll-down">
+                <span>View Details</span>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="details" id="details">
+        <div class="container fade-in-up">
+            <h2 class="section-title">The Celebration</h2>
+            <div class="event-cards">
+                <div class="card">
+                    <div class="card-top-accent"></div>
+                    <div class="card-icon">🪔</div>
+                    <h3>Haldi & Mehndi</h3>
+                    <p class="time">10:00 AM</p>
+                    <p class="date">24th Nov 2026</p>
+                    <p class="venue">The Grand Palace Hotel<br>Mumbai, India</p>
+                </div>
+                <div class="card main-event">
+                    <div class="card-top-accent"></div>
+                    <div class="card-icon">🔥</div>
+                    <h3>Wedding Ceremony</h3>
+                    <p class="time">07:00 PM</p>
+                    <p class="date">25th Nov 2026</p>
+                    <p class="venue">Shree Siddhivinayak Temple Grounds<br>Mumbai, India</p>
+                </div>
+            </div>
+            
+            <div class="rsvp fade-in-up">
+                <h3>With Best Compliments From</h3>
+                <p>Family and Friends</p>
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
